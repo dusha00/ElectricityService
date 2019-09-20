@@ -30,7 +30,7 @@ namespace ElectricityService
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "ElectricityServiceApi", Version = "v1" });
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, "ElectricityService.XML");
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, "ElectricityService.xml");
                 c.IncludeXmlComments(xmlPath);
             });
         }
