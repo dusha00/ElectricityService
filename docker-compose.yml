@@ -1,7 +1,7 @@
 version: "3"
 services:
    backend:
-    image: ElectricityService:V1
+    image: ElectricityService:v1
     deploy:
       replicas: 3
       restart_policy:
