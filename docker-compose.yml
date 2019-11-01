@@ -1,0 +1,14 @@
+version: "3"
+services:
+   backend:
+    image: ElectricityService:v1
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "5555:3001"
+    networks:
+      - eservicenet
+networks:
+  eservicenet:
